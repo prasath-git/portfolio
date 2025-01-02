@@ -214,9 +214,14 @@ nav .navlinks li a{
 }
 
 
-
-
-
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .navlinks {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align to the left */
+        gap: 10px; /* Add spacing between list items */
+    }
+}
 
 
 
