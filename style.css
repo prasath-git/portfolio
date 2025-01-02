@@ -214,7 +214,25 @@ nav .navlinks li a{
 }
 
 
+/* Prevent splitting on zoom */
+.navbar,
+.nav-links {
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align links to the left */
+    }
+
+    .nav-links li {
+        margin: 5px 0; /* Add spacing for stacked links */
+    }
+}
 
 
 
