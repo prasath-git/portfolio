@@ -472,3 +472,13 @@ nav .navlinks li a{
         flex: none;
     }
 }
+
+
+
+
+@media (max-width: 768px) {
+    .hero-header {
+        min-height: 50vh; /* Adjust height for smaller screens */
+        padding: 10px; /* Reduce padding for mobile */
+    }
+}
