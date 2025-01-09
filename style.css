@@ -8,19 +8,17 @@
 body{
     overflow-x: hidden;
 }
-
 .hero-header {
     width: 100%;
-    min-height: 100vh; /* Ensures it takes the full height of the viewport */
-    height: auto; /* Allows the height to adjust dynamically based on content */
-    background: #222; /* Dark background color */
-    display: flex; /* Flexbox for centering content */
+    height: auto; /* Dynamically adjust the height */
+    min-height: calc(100vh - 50px); /* Adjust to fit the viewport while leaving room for content */
+    background: #222;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Optional padding for spacing */
-    box-sizing: border-box; /* Ensures padding is included in width/height */
+    padding: 20px;
+    box-sizing: border-box;
 }
-
 .wrapper{
     width:1280px;
     max-width: 95%;
@@ -484,7 +482,8 @@ nav .navlinks li a{
 
 @media (max-width: 768px) {
     .hero-header {
-        min-height: 50vh; /* Adjust height for smaller screens */
-        padding: 10px; /* Reduce padding for mobile */
+        min-height: auto; /* Allow the height to adapt dynamically */
+        height: fit-content; /* Ensure it fits its content */
+        padding: 10px; /* Reduce padding for mobile view */
     }
 }
