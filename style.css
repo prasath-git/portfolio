@@ -8,13 +8,19 @@
 body{
     overflow-x: hidden;
 }
-.hero-header{
-    width:100%;
-    height: auto;
-    min-height: 100vh;
-    background: #222;
+
+.hero-header {
+    width: 100%;
+    min-height: 100vh; /* Ensures it takes the full height of the viewport */
+    height: auto; /* Allows the height to adjust dynamically based on content */
+    background: #222; /* Dark background color */
+    display: flex; /* Flexbox for centering content */
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Optional padding for spacing */
     box-sizing: border-box; /* Ensures padding is included in width/height */
 }
+
 .wrapper{
     width:1280px;
     max-width: 95%;
