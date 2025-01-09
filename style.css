@@ -7,22 +7,22 @@
 }
 body{
     overflow-x: hidden;
-    /* height: 100%; */
 }
 .hero-header{
     width:100%;
     height: 100%;
-    /* height: auto; */
     min-height: 100vh;
     background: #222;
     box-sizing: border-box;
 }
+
 @media (max-width: 1023px) {
     .hero-header {
         min-height: auto; /* For mobile, height adjusts to content */
         height: auto; /* Avoid forcing full height */
     }
 }
+
 .wrapper{
     width:1280px;
     max-width: 95%;
