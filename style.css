@@ -16,6 +16,12 @@ body{
     min-height: 100vh;
     background: #222;
 }
+@media (max-width: 1023px) {
+    .hero-header {
+        min-height: auto; /* For mobile, height adjusts to content */
+        height: auto; /* Avoid forcing full height */
+    }
+}
 .wrapper{
     width:1280px;
     max-width: 95%;
