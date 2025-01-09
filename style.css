@@ -10,31 +10,23 @@ body{
 }
 .hero-header {
     width: 100%;
-    min-height: auto; /* Remove forced full viewport height */
-    height: auto; /* Let the height adjust based on content */
-    background: #222; /* Dark background color */
-    display: flex; /* Flexbox for centering content */
+    height: auto; /* Allow height to adjust to content */
+    min-height: 100vh; /* Ensure it takes at least the full viewport height */
+    background: #222; /* Background color */
+    display: flex; /* Center the content vertically and horizontally */
+    flex-direction: column; /* Adjust layout for content stack */
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Optional padding for spacing */
-    box-sizing: border-box; /* Ensure padding is included in dimensions */
-}
-
-@media (min-width: 1024px) {
-    .hero-header {
-        min-height: 100vh; /* Ensure full height on larger screens */
-        height: auto; /* Dynamic height based on content */
-    }
+    padding: 20px; /* Space inside the header */
+    box-sizing: border-box; /* Include padding in width/height calculation */
 }
 
 @media (max-width: 1023px) {
     .hero-header {
-        min-height: auto; /* Adjust for mobile views */
-        height: auto; /* Dynamic height based on content */
-        padding: 15px; /* Optional smaller padding for mobile */
+        min-height: auto; /* For mobile, height adjusts to content */
+        height: auto; /* Avoid forcing full height */
     }
 }
-
 .wrapper{
     width:1280px;
     max-width: 95%;
